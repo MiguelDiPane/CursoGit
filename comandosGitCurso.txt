@@ -1,0 +1,102 @@
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb
+$ git init
+Initialized empty Git repository in C:/Users/Estudios/Documents/CursoGit/ProyectoWeb/.git/
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git status -s
+?? css/
+?? index.html
+?? js/
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git add index.html
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git status -s
+A  index.html
+?? css/
+?? js/
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git commit -m "Comienzo del proyecto"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Estudios@DESKTOP-892774T.(none)')
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git config --global user.email "miguel.dipane@estidopsmiguel.dipane@estidops
+> git config --global user.email "miguel.dipane@estudios-electricos.com"
+> ^C
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git config --global user.email "miguel.dipane@estudios-electricos.com"
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git config --global user.name "Miguel Di Pane"
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git commit -m "Comiezo del proyecto"
+[master (root-commit) 1523d8c] Comiezo del proyecto
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git status -s
+ M index.html
+?? css/
+?? js/
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git commit -m "Agregado titulo y texto"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandosGitCurso.txt
+        css/
+        js/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git add index.html
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git commit -m "Agregado titulo y texto"
+[master 95d07e8] Agregado titulo y texto
+ 1 file changed, 2 insertions(+)
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git log --oneline
+95d07e8 (HEAD -> master) Agregado titulo y texto
+1523d8c Comiezo del proyecto
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git reset --hard 1523d8c
+HEAD is now at 1523d8c Comiezo del proyecto
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git status -s
+?? comandosGitCurso.txt
+?? css/
+?? js/
+
+Estudios@DESKTOP-892774T MINGW64 ~/Documents/CursoGit/ProyectoWeb (master)
+$ git log --oneline
+1523d8c (HEAD -> master) Comiezo del proyecto
+
+
